@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<html lang="id">
+    <head>	
+        <title>IMAGE PICKER</title></head>
+        <style type="text/css">
+        body
+            {
+             flex: 20px
+               
+            } 
+        #judul
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }    
+        
+        </style>
+        
+        <body>
+            <H1 id="judul"> SWORD ART ONLINE WAR OF UNDERWORLD</H1> 
+            <audio controls>
+                <source src="Music/Selfrontier-(osanime.com).mp3" type="audio/mpeg">
+               OST pengiring
+              </audio>
+              <br>
+                <select onchange="gantigambar();" id="listgambar">
+                <option value="https://ninenovelhome.files.wordpress.com/2020/06/reki-kawahara.png">PILIH KARAKTER</option>		
+                		
+                <option value="https://saoars.fanadata.com/public/data/character/character_108_4.png">Kirito</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_110_4.png">Eugeo</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_38_4.png">ALICE</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_89_4.png">Cardinal</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_84_4.png">Ronye</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_86_4.png">Teize</option>		
+                <option value="https://saoars.fanadata.com/public/data/character/character_90_4.png"> Integrity Knight Brucouli Synthesis one</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_66_4.png">Fanatio Synthesis Two</option>	
+                <option value="https://saoars.fanadata.com/public/data/character/character_50_4.png">Edith Synthesis Ten</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_77_4.png">Scheta Synthesis Twelve</option>
+                <option value="https://static.zerochan.net/Dakira.Synthesis.Twenty-two.full.2966224.jpg">Dakira Synthesis Twenty-two</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_78_4.png"> Integrity Knight Renly Synthesis Twenty-seven</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_75_4.png">Linel Synthesis Twenty-eight</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_76_4.png">Fizel Synthesis Twenty-nine</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_115_4.png">Integrity Knight Alice Synthesis Synthesis Thirty</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_48_4.png">Integrity Knight Eldrie Synthesis Synthesis Thirty one</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_88_4.png">Integrity Knight Eugeo two </option>
+                
+                <option value="https://saoars.fanadata.com/public/data/character/character_47_4.png">Sortiliena Serlut </option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_111_4.png">Medina Orthinanos</option>
+                
+                <option value="https://saoars.fanadata.com/public/data/character/character_81_4.png">Stacia Asuna</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_117_4.png"> Solus Sinon</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_112_4.png"> Terirra Leafe</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_126_4.png">Subliziter</option>
+                <option value="https://saoars.fanadata.com/public/data/character/character_125_4.png">Administrator</option>
+            </select>		
+            <br/>	
+            <img src=" https://ninenovelhome.files.wordpress.com/2020/06/reki-kawahara.png" style="width: 100%" id="gambar">
+         </body>
+         <script type="text/javascript">	
+         function gantigambar()
+          {		
+              let gambar = document.getElementById("listgambar").value;		
+              document.getElementById("gambar").src = gambar;		
+              alert("Ini Gambar " + gambar);	  
+            }
+        </script>
+</html>
