@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/syle.css">
+
+    <title> Login Document</title>
+</head>
+<body>
+    <form>
+    <div id="kerangka">
+			
+			<div id="card-content">
+  				<div id="kerangka-title">
+    				<h2>LOGIN</h2>
+    				<div class="underline-title"></div>
+  				</div>
+			</div>
+			<br>
+			<br>
+			<form>
+				<input type="text" id="username" name="username" class="form_login" placeholder="Username or Email ">
+ 
+				<input type="password" id="password" name="password" class="form_login" placeholder="Password ">
+ 
+                <button type="submit" class="tombol_login" onclick="return login()">SUBMIT</button>
+            </form>
+
+    
+    
+        <script>
+        function login() {
+        username = document.getElementById("username").value;
+        password = document.getElementById("password").value;
+
+        if (username == "" || password == "") {
+            alert("Username / Password Tidak Boleh Kosong");
+            return false;
+        }
+        else if (password.length < 6) {
+            alert("Password Kurang dari 6");
+            return false;
+        }
+        else if (username == "test" && password == "0895360716530") {
+            window.location = "home.html"
+            return false;
+        }else{
+            alert("Username / Password anda salah");
+        }
+    }
+    
+        </script>
+    </body>
+</html>
